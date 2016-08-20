@@ -1,0 +1,55 @@
+<div ng-controller="order">
+<div ng-include="'tabs.html'"></div>
+
+<div  class="list-options">
+	<div class="items" ng-repeat="item in foodByCategory">
+		<img src="assets/img/{{item.image}}" width="300px" height="200px"/>
+		<div class="category">
+			<div class="item-name">{{item.name}}</div>
+			<div class="price">
+				<span class="price-label">Price :</span><span class="price-amt">{{item.price}}</span><span class="icon-inr"></span>
+				<div class="rating"><span class="icon-star yellow"></span><span class="icon-star yellow"></span><span class="icon-star yellow"></span><span class="icon-star "></span><span class="icon-star "></span></div>
+				<div class="order"><span class="icon-minus" ng-click="minusCount(item)"></span><span class="count">{{item.count}}</span><span class="icon-add" ng-click="addCount(item)"></span></div>
+		</div>
+	</div>
+</div>
+
+<div ng-hide="!isOrdered" class="checkout" ng-init="init()">
+	<table class="table" >
+		<tr>
+			<th width="150px">
+				Item
+			</th>
+			<th>
+				Qty
+			</th>
+			<th>
+				Price
+			</th>
+		</tr>
+		<tr ng-repeat="items in order">
+			<td width="150px" align="left">
+				{{items.orderName}}
+			</td>
+			<td>
+				{{items.orderCount}}
+			</td>
+			<td>
+				{{items.totalPrice}}<span class="icon-inr"></span>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">
+				<b>Total</b>
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				<b>{{sum}}<span class="icon-inr"></span></b>
+			</td>
+		</tr>
+	</table>
+<a href="#foodCart" class="btn btn-default" role="button">Confirm Order</a>
+</div>
+</div>

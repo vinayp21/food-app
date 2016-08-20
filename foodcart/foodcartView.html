@@ -1,0 +1,105 @@
+<div ng-show="isCartEmpty" ng-init="init()">
+	<h2>You Have Not Purchased Any Items yet :(</h2>
+</div>
+<div ng-hide="isCartEmpty" ng-init="init()">
+<div class="order-table">
+	<h3>YOUR ORDER</h3>
+	<table class="table table-bordered" width="90%">
+		<tr>
+			<th width="50%">
+			Items
+			</th>
+			<th>
+			Quantity
+			</th>
+			<th>
+			Price/Quantity
+			</th>
+			<th>
+			Total Price
+			</th>
+		</tr>
+		<tr ng-repeat="items in getAllOrders">
+			<td width="50%">
+			<b>{{items.orderName}}</b>
+			</td>
+			<td>
+			{{items.orderCount}}
+			</td>
+			<td>
+			{{items.orderPrice}}
+			</td>
+			<th>
+			{{items.totalPrice}}
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+			<b>Total Amount</b>
+			</td>
+			<td>
+			
+			</td>
+			<td>
+			
+			</td>
+			<th>
+			{{total}}
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="container">
+	<h3 class="shipping-details">Shipping Details</h3>
+	<section class="shipping-details-form">
+		<table class="table">
+		<tr>
+			<td valign="middle">
+				<label>Name:<label>
+			</td>
+			<td>
+				 <input type="text" class="form-control" id="name">
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle">
+				<label>Mobile Number:<label>
+			</td>
+			<td>
+				 <input type="text" class="form-control" id="no">
+			</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Email Id<label>
+				</td>
+				<td>
+					 <input type="text" class="form-control" id="email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Address</label>
+				</td>
+				<td>
+					<textarea class="form-control" rows="3" id="comment"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Land Mark</label>
+				</td>
+				<td>
+					<input type="text" class="form-control" id="landMark">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button class="btn btn-default">Begin Payment</button>
+				</td>
+			</tr>
+
+	</table>
+	</section>
+</div>
+</div>

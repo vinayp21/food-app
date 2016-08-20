@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My App</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/subscribe.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/lib/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="app.js"></script>
+  <script src="order/orderController.js"></script>
+ <script src="menu/menuService.js"></script>  
+ <script src="menu/menuController.js"></script>
+ <script src="subscribe/subscribeController.js"></script>
+ <script src="sharedService.js"></script>
+  <script src="order/orderService.js"></script>
+  <script src="foodcart/foodcartController.js"></script>
+</head>
+<body ng-app="food">
+	<header ng-controller="home">
+		<nav class="navbar navbar-default custom-header">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#/" ng-click="this.selectedMenu('home')">WebSiteLogo</a>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		    	<li><button class="btn btn-default" data-toggle="modal" data-target="#loginmodal">Login</button></li>
+		      <li ng-class="{active:isSelected==='home'}"><a href="#/" ng-click="this.selectedMenu('home')">Home</a></li>
+		      <li ng-class="{active:isSelected==='subscribe'}"><a href="#/subscribe" ng-click="this.selectedMenu('subscribe')">Subscribe</a></li>
+		      <li ng-class="{active:isSelected==='cart'}"><a href="#/foodCart" ng-click="this.selectedMenu('cart')">Cart</a></li> 
+		    </ul>
+		  </div>
+		</nav>
+	</header>
+
+	<div class="modal fade" id="loginmodal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">USER LOGIN</h4>
+        </div>
+        <div class="modal-body">
+         <div class="form-group">
+			  <label for="usr">Email Id:</label>
+			  <input type="text" class="form-control" id="usr">
+			</div>
+			<div class="form-group">
+			  <label for="pwd">Password:</label>
+			  <input type="password" class="form-control" id="pwd">
+			</div>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default register" data-toggle="modal" data-target="#registermodal" data-dismiss="modal">Register</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+	<section  class="content">
+		<div ng-view></div>
+	</section>
+	
+	<footer>
+		<div class="footer-content">
+		copyrights reserved 
+		</div>
+	</footer>
+</body>
+
+</html>

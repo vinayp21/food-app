@@ -1,0 +1,148 @@
+
+body{
+
+}
+header{
+	position:fixed;
+	width:100%;
+	z-index:1;
+}
+header .custom-header{
+	background-color:#ffffff;
+	box-shadow: 0 0 10px 0;
+}
+.content{
+	padding-top:100px;
+}
+footer{
+	background-color:#444444;
+	position :relative;
+	width:100%;
+	padding:10px;
+}
+footer .footer-content{
+color: #ffffff;
+
+}
+
+
+.content .menubar{
+	padding:0 20px;
+}
+.content .menubar ul li a{
+	font-size:18px;
+}
+nav li:nth-child(1){
+	margin:10px 50px;
+}
+
+.background-carousel{
+
+}
+.form-group{
+text-align: center;
+}
+.register{
+	float:left;
+}
+.modal-header{
+	text-align: center;
+}
+.nav-tabs .active {
+	border-top: 2px solid red;
+	border-radius:4px;
+
+}
+.content .nav-tabs .active a{
+	color: red;
+}
+.content .list-options{
+	text-align:center;
+	background-color: #eeeeee;
+	position:relative;
+}
+.content .list-options .items{
+	display:inline-block;
+	padding:20px;
+}
+.content .list-options img{
+	border: 5px solid #ffffff;
+	border-radius: 4px 4px 0 0 ;
+}
+.content .list-options .items .category{
+	width:300px;
+	padding: 10px 20px;
+	background-color:#ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 0 0 8px 8px; 
+	font-size:20px;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+
+.content .list-options .checkout{
+ position:absolute;
+ background-color:white;
+ right:0;
+ top:0;
+ height:100%;
+ width:300px;
+ padding:20px;
+ transition: all linear 0.5s;
+}
+
+
+.category .item-name{
+  padding-bottom: 10px;
+}
+.price{
+	position: relative;
+	text-align: right;
+	border-top: 1px solid #eeeeee;
+}
+.price .price-label{
+font-size: 14px;
+color:gray;
+}
+.price .price-amt{
+font-size: 18px;
+}
+.icon-inr{
+	vertical-align: -5px;
+}
+.rating{
+	position: absolute;
+	left:0;
+	top:7px;
+}
+.icon-star{
+	font-size: 18px;
+	color:gray;
+}
+.yellow{
+	color:yellow;
+}
+.order{
+	text-align: center;
+}
+.order .icon-add{
+	font-size: 16px;
+	cursor:pointer;
+}
+.order .icon-minus{
+	font-size: 16px;
+	cursor:pointer;
+}
+.order .count{
+	padding: 0 15px;
+}
+.shipping-details-form .table td{
+ border:none;
+}
+.shipping-details{
+	text-align:center;
+}
+.order-table{
+width:90%;
+margin:0 auto;
+}

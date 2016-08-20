@@ -1,0 +1,23 @@
+.subscribe{
+	text-align:center;
+}
+.subscribe span{
+	color:red;
+	font-size:50px;
+}
+.subscribe-table{
+	width:80%;
+	margin: 0 auto;
+	padding:15px;
+	border-top: 1px solid #eeeeee;
+}
+.subscribe-table .table{
+margin-bottom:40px;
+}
+.subscribe-table .table tr td {
+	vertical-align:middle;
+	border:none;
+}
+table tr:nth-child(6){
+text-align:center;
+}

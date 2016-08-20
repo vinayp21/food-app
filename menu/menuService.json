@@ -1,0 +1,146 @@
+{
+	"foodCategoryOptions": [{
+		"categoryName": "South Indian Special",
+		"category": "SouthIndianSpecial",
+		"image": "south_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": "dosa.jpg",
+			"count": 0
+		}, {
+			"name": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": "bisibelebath.jpg",
+			"count": 0
+		}]
+	}, {
+		"categoryName": "North Indian Special",
+		"category": "NorthIndianSpecial",
+		"image": "north_india.jpeg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "Eastern Indian Style",
+		"category": "EasternIndianStyle",
+		"image": "east_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "Western Indian Style",
+		"category": "WesternIndianStyle",
+		"image": "west_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "Customize Order",
+		"category": "CustomizeOrder",
+		"image": "customize.jpg"
+	}],
+	"snacksOptions": [{
+		"categoryName": "South Indian Special",
+		"category": "SouthIndianSpecial",
+		"image": "south_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name:": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "North Indian Special",
+		"category": "NorthIndianSpecial",
+		"image": "north_india.jpeg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name:": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "Eastern Indian Style",
+		"category": "EasternIndianStyle",
+		"image": "east_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}],
+	"homeMadeOptions": [{
+		"categoryName": "South Indian Special",
+		"category": "SouthIndianSpecial",
+		"image": "south_india.jpg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name:": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}, {
+		"categoryName": "North Indian Special",
+		"category": "NorthIndianSpecial",
+		"image": "north_india.jpeg",
+		"foodOptions": [{
+			"name": "Dosa",
+			"price": 40,
+			"rating": 3,
+			"image": ""
+		}, {
+			"name:": "Bisi Bele Bath",
+			"price": 50,
+			"rating": 5,
+			"image": ""
+		}]
+	}]
+}
