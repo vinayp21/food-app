@@ -60,6 +60,7 @@ text-align: center;
 	text-align:center;
 	background-color: #eeeeee;
 	position:relative;
+	min-height: 553px;
 }
 .content .list-options .items{
 	display:inline-block;
@@ -77,6 +78,7 @@ text-align: center;
 	border-radius: 0 0 8px 8px; 
 	font-size:20px;
 	box-shadow: 0 8px 6px -6px black;
+	 margin: 0 auto;
 }
 
 

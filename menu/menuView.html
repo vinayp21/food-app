@@ -1,22 +1,35 @@
 <div ng-controller="menu">
 <div ng-include="'tabs.html'"></div>
-<div  class="list-options" ng-show="selected==='food'" style="background-image:url('assets/img/background-carousel.jpg')">
-	<div class="items" ng-repeat="item in foodMenu">
+<div  class="list-options " ng-show="selected==='food'" style="background-image:url('assets/img/background-carousel.jpg')">
+	<div class="container-fluid">
+		<div class="row">
+	<div class="items  col-md-6 col-xs-12 col-lg-4 " ng-repeat="item in foodMenu">
 		<a href="#category/{{item.category}}" ng-click="selectCategory(item)"><img src="assets/img/{{item.image}}" width="300px" height="200px"/></a>
 		<div class="category">{{item.categoryName}}</div>
 	</div>
 </div>
-<div  class="list-options" ng-show="selected==='snacks'">
-	<div class="items" ng-repeat="item in snacksMenu">
-		<a href="#category/{{item.category}}" ng-click="selectCategory(item)"><img src="assets/img/{{item.image}}" width="300px" height="200px"/></a>
-		<div class="category">{{item.categoryName}}</div>
-	</div>
+</div>
 </div>
 
-<div  class="list-options" ng-show="selected==='homeMade'">
-	<div class="items" ng-repeat="item in homeMade">
+<div  class="list-options" ng-show="selected==='snacks'" style="background-image:url('assets/img/background-carousel.jpg')">
+	<div class="container-fluid">
+		<div class="row">
+	<div class="items col-md-6 col-xs-12 col-lg-4" ng-repeat="item in snacksMenu">
+		<a href="#category/{{item.category}}" ng-click="selectCategory(item)"><img src="assets/img/{{item.image}}" width="300px" height="200px"/></a>
+		<div class="category">{{item.categoryName}}</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div  class="list-options" ng-show="selected==='homeMade'" style="background-image:url('assets/img/background-carousel.jpg')">
+	<div class="container-fluid">
+		<div class="row">
+	<div class="items col-md-6 col-xs-12 col-lg-4" ng-repeat="item in homeMade">
 		<img src="assets/img/{{item.image}}" width="300px" height="200px"/>
 		<div class="category">{{item.categoryName}}</div>
 	</div>
+</div>
+</div>
 </div>
 </div>
