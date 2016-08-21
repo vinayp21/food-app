@@ -25,7 +25,7 @@ menuService.getFoodOptionsByCategory($routeParams.category).then(function(data){
 $scope.menuSelected= function(tab){
 	$scope.selected=tab;
 	sharedService.setCurrentTab(tab);
-	$window.location.href = 'http://localhost:8080/myapp/index.html#/';
+	$location.path( "/" );
 };
 $scope.minusCount= function(item){
 	if(item.count!= 0){
