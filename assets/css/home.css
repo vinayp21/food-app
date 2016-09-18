@@ -81,7 +81,11 @@ text-align: center;
 	 margin: 0 auto;
 }
 
-
+@media screen and (max-width:767px){
+.content .list-options .checkout{
+display: none;
+}	
+}
 .content .list-options .checkout{
  position:absolute;
  background-color:white;
