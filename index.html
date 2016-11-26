@@ -18,7 +18,9 @@
  <script src="menu/menuController.js"></script>
  <script src="subscribe/subscribeController.js"></script>
  <script src="sharedService.js"></script>
+ <script src="loginService.js"></script>
   <script src="order/orderService.js"></script>
+  <script src="order/orderDirective.js"></script>
   <script src="foodcart/foodcartController.js"></script>
 </head>
 <body ng-app="food">
@@ -31,7 +33,8 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 			</button>
-		      <a class="navbar-brand" href="#/" ng-click="this.selectedMenu('home')">WebSiteLogo</a>
+		      <a class="navbar-brand" href="#/" ng-click="this.selectedMenu('home')">----\/\/\/\----</a>
+		      <a ng-hide="isCartEmpty" href="#/foodCart"><img class="hidden-lg hidden-md hidden-sm notify-cart" src='assets/img/notify.jpg'/></a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		    <ul class="nav navbar-nav navbar-right">
@@ -49,25 +52,31 @@
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content" ng-controller='login'>
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">USER LOGIN</h4>
         </div>
+        <form name='loginForm' class='login-form' novalidate>
         <div class="modal-body">
+        	
          <div class="form-group">
 			  <label for="usr">Email Id:</label>
-			  <input type="text" class="form-control" id="usr">
+			  <input type="text" name='userEmail' class="form-control"  id="usr" ng-model="user.email" required>
+			  <span class="error-username" ng-show="!loginForm.userEmail.$pristine && loginForm.userEmail.$invalid">Username cannot be empty</span>
 			</div>
 			<div class="form-group">
 			  <label for="pwd">Password:</label>
-			  <input type="password" class="form-control" id="pwd">
+			  <input type="password" name="userPwd" class="form-control" id="pwd" ng-model="user.pwd" required>
+			  <span class="error-username" ng-show="!loginForm.userPwd.$pristine && loginForm.userPwd.$invalid">Password cannot be empty</span>
 			</div>
+		
         </div>
         <div class="modal-footer">
-        	<button type="button" class="btn btn-default register" data-toggle="modal" data-target="#registermodal" data-dismiss="modal">Register</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+        	<button type="button" class="btn btn-default register" data-toggle="modal" data-target="#registermodal" data-dismiss="modal" ng-click="clear()">Cancel</button>
+          <button type="button" ng-disabled='loginForm.$invalid' class="btn btn-default" ng-click="loginSubmit()">Submit</button>
         </div>
+        </form>
       </div>
       
     </div>

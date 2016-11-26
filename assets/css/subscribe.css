@@ -11,6 +11,14 @@
 	padding:15px;
 	border-top: 1px solid #eeeeee;
 }
+@media screen and (max-width:425px){
+.subscribe-table{
+	width:100%;
+	margin: 0 auto;
+	padding:15px;
+	border-top: 1px solid #eeeeee;
+}	
+}
 .subscribe-table .table{
 margin-bottom:40px;
 }

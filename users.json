@@ -1,0 +1,12 @@
+{
+	"users":[{
+		"emailId":"vinay@gmail.com",
+		"password":"12345",
+		"phone_no":"98763535"
+	},
+	{
+		"emailId":"test@gmail.com",
+		"password":"11111",
+		"phone_no":"938347736"
+	}]
+}

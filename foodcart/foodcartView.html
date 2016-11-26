@@ -1,5 +1,6 @@
-<div ng-show="isCartEmpty" ng-init="init()">
-	<h2>You Have Not Purchased Any Items yet :(</h2>
+<div class='empty-msg' ng-show="isCartEmpty" ng-init="init()">
+	<h2 class='hidden-xs hidden-sm'>You Have Not Purchased Any Items yet :(</h2>
+	<h4 class='hidden-lg hidden-md'>You Have Not Purchased Any Items yet :(</h4>
 </div>
 <div ng-hide="isCartEmpty" ng-init="init()">
 <div class="order-table">
