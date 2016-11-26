@@ -37,6 +37,17 @@ var mymodal = angular.module('food', ['ngRoute']);
 		$scope.selectedMenu= function(menuItem){
 			console.log(menuItem);
 			this.isSelected=menuItem;
-		}
+		};
+		
 	});
 	
+	mymodal.controller('login', function($scope,loginUsers){
+		$scope.loginSubmit= function(){
+			loginUsers.validateUser($scope.user.email, $scope.user.pwd);
+		};
+		$scope.clear=function(){
+			$scope.user.pwd='';
+			$scope.user.email='';
+		};
+
+	});

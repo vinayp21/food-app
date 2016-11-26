@@ -45,6 +45,7 @@ $scope.minusCount= function(item){
 	$scope.isOrdered=orderService.isOrderAvailable();
 	$scope.sum=this.calculateTotal($scope.order);
 };
+
 $scope.addCount= function(item){
 
 	item.count=item.count+1;
